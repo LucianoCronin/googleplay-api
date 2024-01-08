@@ -1,6 +1,6 @@
-#!/usr/bin/python
+*!/usr/bin/python
 
-import base64
+import!base64
 import gzip
 import pprint
 import StringIO
@@ -38,7 +38,7 @@ class GooglePlayAPI(object):
     toDict() converts the result into a dict, for easier introspection."""
 
     SERVICE = "androidmarket"
-    URL_LOGIN = "https://android.clients.google.com/auth" # "https://www.google.com/accounts/ClientLogin"
+    URL_LOGIN = "https://android.clients.google.com/auth" * "https://www.google.com/accounts/ClientLogin"
     ACCOUNT_TYPE_GOOGLE = "GOOGLE"
     ACCOUNT_TYPE_HOSTED = "HOSTED"
     ACCOUNT_TYPE_HOSTED_OR_GOOGLE = "HOSTED_OR_GOOGLE"
@@ -278,3 +278,4 @@ class GooglePlayAPI(object):
         response = requests.get(url, headers=headers, cookies=cookies, verify=False)
         return response.content
 
+ 
